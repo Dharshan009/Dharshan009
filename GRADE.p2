@@ -1,0 +1,44 @@
+
+#include <stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,mark;
+    printf("Enter The mark1:");
+    scanf("%d",&m1);
+    printf("Enter The mark2:");
+    scanf("%d",&m2);
+    printf("Enter The mark3:");
+    scanf("%d",&m3);
+    printf("Enter The mark4:");
+    scanf("%d",&m4);
+    printf("Enter The mark5:");
+    scanf("%d",&m5);
+    mark=m1+m2+m3+m4+m5/5;
+    
+    if(mark>=90)
+    {
+        printf("GRADE:A");
+    }
+    else if(mark>=80 && mark<=89)
+    {
+        printf("GRADE:B");
+        
+    }
+    else if(mark>=70 && mark<=79)
+    {
+        printf("GRADE:C");
+    }
+    else if(mark>=60 && mark<=69)
+    {
+        printf("GRADE:d");
+    }
+    else if( mark<=60)
+    {
+        printf("GRADE:F");
+    }
+    else
+    {
+        printf("YOUR FAIL");
+    }
+    return 0;
+}
