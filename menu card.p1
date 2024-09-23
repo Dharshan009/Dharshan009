@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main() {
+    int ch,quanty,i;
+    menu:
+    printf("\t\t\t________________MENU CARD________________");
+    printf("\n\t\t\t_______________1.TEA   Rs.50_____________ ");
+    printf("\n\t\t\t_______________2.COFFEE Rs.80_____________");
+    printf("\n\t\t\t________________3.CAKE  Rs.150____________");
+    printf("\n\t\t\t________________4.COKKIES  Rs.30___________");
+    printf("\n \t\t\tEnter Your choice:");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:
+            printf("\n\t\t\t YOU HAVE SELECTED TEA Rs.50:");
+            printf("\n\t\t\tEnter the quanty:");
+            scanf("%d",&quanty);
+            printf("\n\t\t\tTotal Amount %d:",(quanty*50));
+            break;
+         case 2:
+            printf("\n\t\t\tYOU HAVE SELECTED COFFE Rs.80:");
+            printf("\n\t\t\tEnter the quanty:");
+            scanf("%d",&quanty);
+            printf("\n\t\t\tTotal Amount %d:",(quanty*80));
+            break;
+            
+         case 3:
+            printf("\n\t\t\tYOU HAVE SELECTED CAKE Rs.150:");
+            printf("\n\t\t\tEnter the quanty:");
+            scanf("%d",&quanty);
+            printf("\n\t\t\tTotal Amount %d:",(quanty*150));
+            break;
+         case 4:
+            printf("\n\t\t\tYOU HAVE SELECTED COKKIES Rs.30:");
+            printf("\n\t\t\tEnter the quanty:");
+            scanf("%d",&quanty);
+            printf("\n\t\t\tTotal Amount %d:",(quanty*30));
+            break;
+        default:
+            printf("\ninvalid");
+            
+        
+    }
+    printf("\n\t\t\ THANK YOU AND COME AGAIN");
+    printf("\n\t\t\t IF YOU WANT CONTINUE PRESS 0:");
+    scanf("%d",&i);
+    if(i==0)
+    {
+        goto menu;
+    }
+
+    return 0;
+}
